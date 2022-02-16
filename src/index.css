@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* rows css */
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: black;
+}
+.square:active {
+  background: #64f4c4;
+}
